@@ -1,0 +1,202 @@
+.side_tab{
+    position: fixed;
+    overflow: hidden;
+    background-color: #393E46;
+    align-items: left;
+    width: 200px;
+    height: 100%;
+}
+body{
+    margin-left: 200px;
+    background-color: #222831;
+    color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.side3{
+    position: fixed;
+    overflow: hidden;
+    background-color: #585858;
+    width: 200px;
+    height: 8%;
+    transform: translate(25%, 600%);
+    border-radius: 20px 20px 20px 20px;
+}
+.side2{
+    position: fixed;
+    overflow: hidden;
+    background-color: #585858;
+    width: 200px;
+    height: 8%;
+    transform: translate(25%, 800%);
+    border-radius: 20px 20px 20px 20px;
+}
+.side1{
+    position: fixed;
+    overflow: hidden;
+    background-color: #585858;
+    width: 200px;
+    height: 8%;
+    transform: translate(25%, 1000%);
+    border-radius: 20px 20px 20px 20px;
+}
+.aboutme{
+    display: flex;
+    position: relative;
+    transform: translate(18%, 25%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', monospace
+}
+.aboutme:hover{
+    text-shadow: -2px 2px 2px #40A2E3;
+    transition: .5s ease-in-out;
+    transform: translate(20%, 18%);
+}
+.skills{
+    display: flex;
+    position: relative;
+    transform: translate(25%, 26%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+.skills:hover{
+    text-shadow: -2px 2px 2px #40A2E3;
+    transition: .5s ease-in-out;
+    transform: translate(27%, 18%);
+}
+.certificate{
+    display: flex;
+    position: relative;
+    transform: translate(1%, 25%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+.certificate:hover{
+    text-shadow: -2px 2px 2px #40A2E3;
+    transition: .5s ease-in-out;
+    transform: translate(2%, 18%);
+}
+.welcome{
+    display: flex;
+    position: absolute;
+    transform: translate(8%, 25%);
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', monospace;
+}
+.name{
+    display: flex;
+    position: absolute;
+    transform: translate(40%, 15%);
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    color: #585858;
+}
+.name:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff, 
+                 0 0 40px #fff;
+    transition: .5s ease-in-out;
+}
+.desc{
+    display: flex;
+    position: absolute;
+    transform: translate(30%, 25%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', monospace;
+    width: 70%;
+}
+.skill_set{
+    position: absolute;
+    transform: translate(48%, 50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', monospace;
+    width: 50%;
+}
+.skill_name{
+    font-size: 18px;
+    font-weight: 700;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill_bar{
+    height: 14px;
+    background: #282828;
+    border-radius: 3px;
+}
+.skill-per{
+    height: 14px;
+    background: #40A2E3;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+    color: black;
+    font-family: 'Courier New', monospace;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+.images{
+    position: absolute;
+}
+.certi{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    transform: translate(65%, 25%);
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
